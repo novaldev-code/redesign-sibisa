@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panduan penggunaan — SIBISA Kabupaten Bima</title>
+<meta name="description" content="Langkah praktis mencari dataset, memahami metadata, mengakses berkas data, dan menggunakan data secara bertanggung jawab.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<script>try{var t=localStorage.getItem('sibisa-theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.toggle('dark',d)}catch(e){}</script>
+</head>
+<body><header class="site-header">
+  <div class="container site-header-inner">
+    <a class="brand" href="../index.html" aria-label="SIBISA Kabupaten Bima, ke beranda">
+      <img src="../assets/images/lambang-bima.png" alt="" width="36" height="42">
+      <span class="brand-text"><strong>SIBISA</strong><span>Kabupaten Bima</span></span>
+    </a>
+    <nav class="nav" aria-label="Navigasi utama" id="main-nav"><div class="nav-item"><a href="../pages/data.html" data-nav-match="/pages/data.html">Dataset</a></div><div class="nav-item"><a href="../pages/organisasi.html" data-nav-match="/pages/organisasi.html">Organisasi</a></div><div class="nav-item"><a href="../pages/visualisasi.html" data-nav-match="/pages/visualisasi.html">Visualisasi</a></div><div class="nav-item"><a href="../pages/infografik.html" data-nav-match="/pages/infografik.html">Infografik</a></div><div class="nav-item"><a href="../pages/publikasi.html" data-nav-match="/pages/publikasi.html">Publikasi</a></div>
+    <div class="nav-item">
+      <button data-dropdown-toggle aria-expanded="false" aria-controls="nav-informasi">Informasi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+      <div class="group-panel" id="nav-informasi">
+        <a href="../pages/tentang.html" data-nav-match="/pages/tentang.html">Tentang SIBISA <small>Dasar dan tata kelola portal</small></a>
+        <a href="../pages/panduan.html" data-nav-match="/pages/panduan.html">Panduan penggunaan <small>Langkah mencari dan memakai data</small></a>
+        <a href="../pages/faq.html" data-nav-match="/pages/faq.html">Pertanyaan umum <small>Jawaban atas pertanyaan yang sering diajukan</small></a>
+      </div>
+    </div><div class="nav-item"><a href="../pages/login.html" data-nav-match="/pages/login.html">Masuk</a></div></nav>
+    <div class="header-actions">
+      <a class="btn-search" href="../pages/data.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Cari data</a>
+      <button class="icon-btn" id="theme-btn" aria-label="Ganti tema terang atau gelap"><svg class="sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Buka menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+  
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="../index.html" data-nav-match="/index.html">Beranda</a>
+      <a href="../pages/data.html" data-nav-match="/pages/data.html">Dataset</a><a href="../pages/organisasi.html" data-nav-match="/pages/organisasi.html">Organisasi</a><a href="../pages/visualisasi.html" data-nav-match="/pages/visualisasi.html">Visualisasi</a><a href="../pages/infografik.html" data-nav-match="/pages/infografik.html">Infografik</a><a href="../pages/publikasi.html" data-nav-match="/pages/publikasi.html">Publikasi</a>
+      <div class="group-title">Informasi</div>
+      <div class="indent">
+        <a href="../pages/tentang.html" data-nav-match="/pages/tentang.html">Tentang SIBISA</a>
+        <a href="../pages/panduan.html" data-nav-match="/pages/panduan.html">Panduan penggunaan</a>
+        <a href="../pages/faq.html" data-nav-match="/pages/faq.html">Pertanyaan umum</a>
+      </div>
+      <a href="../pages/login.html" data-nav-match="/pages/login.html">Masuk</a>
+    </div>
+</header>
+<main>
+<section class="page-header">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="page-header-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Beranda</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+      <span aria-current="page">Panduan penggunaan</span>
+    </nav>
+    <h1>Panduan penggunaan</h1>
+    <p class="desc">Langkah praktis mencari dataset, memahami metadata, mengakses berkas data, dan menggunakan data secara bertanggung jawab.</p>
+  </div>
+</section>
+<div class="content">
+  <div class="grid-2">
+    <div>
+      <div class="prose">
+        <h2>1. Telusuri katalog data</h2>
+        <p>Mulai dari menu <strong>Data → Dataset</strong> atau gunakan kolom pencarian pada beranda. Masukkan kata kunci yang spesifik, misalnya nama komoditas, wilayah, atau indikator pembangunan.</p>
+        <h2>2. Persempit hasil pencarian</h2>
+        <p>Gunakan panel filter pada halaman katalog untuk memilih topik, organisasi, dan tahun data. Filter dapat dikombinasikan, lalu tekan <strong>Terapkan</strong>. Gunakan tautan atur ulang untuk menghapus seluruh filter.</p>
+        <h2>3. Baca metadata sebelum menggunakan data</h2>
+        <p>Halaman detail dataset memuat deskripsi, organisasi penghasil, topik, tahun data, periode pemutakhiran, format berkas, serta struktur kolom. Periksa bagian ini untuk memastikan definisi dan satuan data sesuai kebutuhan Anda.</p>
+        <h2>4. Akses berkas data</h2>
+        <p>Berkas data lengkap disediakan melalui portal SIBISA Kabupaten Bima. Tautan pada halaman detail mengarahkan Anda ke portal tersebut. Ketersediaan format berkas dapat berbeda antarperangkat daerah.</p>
+        <h2>5. Kutip data dengan benar</h2>
+        <p>Saat menggunakan data untuk laporan, penelitian, atau publikasi, cantumkan nama dataset, organisasi penghasil, tahun data, dan sumber portal. Perhatikan lisensi yang tercantum pada metadata masing-masing dataset.</p>
+        <h2>6. Sampaikan masukan</h2>
+        <p>Apabila menemukan ketidaksesuaian data atau tautan yang tidak berfungsi, sampaikan kepada perangkat daerah penghasil data atau walidata melalui kanal resmi Pemerintah Kabupaten Bima.</p>
+        <h2>Istilah dalam katalog</h2>
+      </div>
+      <div class="table-wrap" style="margin-top:1rem">
+        <table>
+          <caption class="sr-only">Istilah dalam katalog</caption>
+          <thead><tr><th scope="col">Istilah</th><th scope="col">Penjelasan</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Dataset</th><td>Kumpulan data yang disusun menurut struktur tertentu dan dikelola oleh satu organisasi.</td></tr><tr><th scope="row">Metadata</th><td>Informasi tentang data, mencakup definisi, periode, satuan, dan sumber data.</td></tr><tr><th scope="row">Walidata</th><td>Perangkat daerah yang mengoordinasikan pengelolaan dan penyebarluasan data sektoral.</td></tr><tr><th scope="row">Produsen data</th><td>Perangkat daerah yang menghasilkan data sesuai tugas dan fungsinya.</td></tr><tr><th scope="row">Frekuensi</th><td>Periode pemutakhiran data, misalnya bulanan, semesteran, atau tahunan.</td></tr><tr><th scope="row">Lisensi</th><td>Ketentuan penggunaan dan penyebarluasan kembali data.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:1.5rem;border-left:4px solid var(--gold);background:var(--gold-soft);color:var(--gold-foreground);padding:1rem 1.25rem;border-radius:0 0.5rem 0.5rem 0;font-size:0.875rem;line-height:1.7">Panduan ini menjelaskan penggunaan portal katalog. Ketentuan teknis pengelolaan data tetap mengikuti kebijakan Satu Data Indonesia dan peraturan daerah yang berlaku.</p>
+    </div>
+    <aside class="aside" aria-label="Ringkasan langkah">
+      <div class="steps">
+        <h2>Ringkasan langkah</h2>
+        <ol>
+          <li><span class="num">1</span><div><strong>Cari</strong><p>Gunakan kata kunci pada beranda atau katalog.</p></div></li><li><span class="num">2</span><div><strong>Saring</strong><p>Pilih topik, organisasi, dan tahun data.</p></div></li><li><span class="num">3</span><div><strong>Periksa</strong><p>Baca metadata dan struktur kolom dataset.</p></div></li><li><span class="num">4</span><div><strong>Gunakan</strong><p>Akses berkas melalui portal SIBISA dan cantumkan sumber.</p></div></li>
+        </ol>
+      </div>
+      <div class="side-panel">
+        <h2>Mulai menelusuri</h2>
+        <div class="body">
+          <p>Buka katalog data untuk melihat seluruh dataset yang tersedia.</p>
+          <a class="link primary" href="../pages/data.html" style="display:inline-flex;height:2.5rem;align-items:center;padding:0 1rem;border-radius:0.375rem;background:var(--primary);color:var(--primary-foreground);font-size:0.875rem;font-weight:600">Buka katalog</a>
+        </div>
+      </div>
+      <div class="side-panel">
+        <h2>Pertanyaan lain</h2>
+        <div class="body">
+          <p>Jawaban atas pertanyaan umum tersedia pada halaman pertanyaan umum.</p>
+          <a class="link default" href="../pages/faq.html" style="display:inline-flex;height:2.5rem;align-items:center;padding:0 1rem;border-radius:0.375rem;border:1px solid var(--border);background:var(--card);font-size:0.875rem;font-weight:600">Lihat FAQ</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+</main><footer class="site-footer">
+  <div class="bar"></div>
+  <div class="container site-footer-inner">
+    <div>
+      <div class="brand"><img src="../assets/images/lambang-bima.png" alt=""><div><strong>SIBISA</strong><span>Kabupaten Bima</span></div></div>
+      <p>Sistem Informasi Bima Satu Data: portal data resmi untuk menyediakan data sektoral Kabupaten Bima yang akurat, terbuka, dan dapat dipertanggungjawabkan.</p>
+    </div>
+    <nav aria-label="Data"><h2>Data</h2><ul>
+      <li><a href="../pages/data.html">Dataset</a></li>
+      <li><a href="../pages/visualisasi.html">Visualisasi</a></li>
+      <li><a href="../pages/infografik.html">Infografik</a></li>
+      <li><a href="../pages/publikasi.html">Publikasi</a></li>
+    </ul></nav>
+    <nav aria-label="Informasi"><h2>Informasi</h2><ul>
+      <li><a href="../pages/tentang.html">Tentang SIBISA</a></li>
+      <li><a href="../pages/panduan.html">Panduan penggunaan</a></li>
+      <li><a href="../pages/faq.html">Pertanyaan umum</a></li>
+      <li><a href="../pages/organisasi.html">Organisasi</a></li>
+    </ul></nav>
+    <div><h2>Kontak</h2><address>
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> <span>Jl. Soekarno Hatta No. 1, Komplek Kantor Bupati Bima, Godo-Woha, Kabupaten Bima</span></p>
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> <span><a href="https://sibisa.bimakab.go.id" target="_blank" rel="noopener noreferrer">sibisa.bimakab.go.id</a><br><a href="https://bimakab.go.id" target="_blank" rel="noopener noreferrer">bimakab.go.id</a></span></p>
+    </address></div>
+  </div>
+  <div class="bottom"><div class="container bottom-inner">
+    <p>© 2026 Pemerintah Kabupaten Bima. Hak cipta dilindungi.</p>
+    <p>Diselenggarakan oleh Diskominfostik Kabupaten Bima</p>
+  </div></div>
+</footer>
+<button class="scroll-top hidden" id="scroll-top" aria-label="Kembali ke atas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
+<script src="../js/data.js"></script>
+<script src="../js/icons.js"></script>
+<script src="../js/charts.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/main.js"></script>
+<script>document.querySelectorAll('[data-chart]').forEach(function(el){el.innerHTML=window.chartSVG(el.dataset.chart);});</script>
+</body></html>

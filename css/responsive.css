@@ -1,0 +1,12 @@
+/* Additional responsive refinements */
+@media (max-width: 639px) {
+  .stats-section { margin-top: -5rem; }
+  .hero-inner { padding-bottom: 10rem; }
+  .tabs { padding: 1rem; }
+  .form-card { padding: 0.75rem; }
+  .dataset-row { padding: 0.875rem; }
+  .media-card .body { padding: 0.875rem; }
+}
+@media (min-width: 1280px) {
+  .hero h1 { font-size: 3.75rem; }
+}

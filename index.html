@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIBISA Kabupaten Bima — Sistem Informasi Bima Satu Data</title>
+<meta name="description" content="Portal data resmi Pemerintah Kabupaten Bima. Telusuri dataset, visualisasi, infografik, dan publikasi statistik sektoral dari perangkat daerah.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>try{var t=localStorage.getItem('sibisa-theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.toggle('dark',d)}catch(e){}</script>
+</head>
+<body><header class="site-header">
+  <div class="container site-header-inner">
+    <a class="brand" href="index.html" aria-label="SIBISA Kabupaten Bima, ke beranda">
+      <img src="assets/images/lambang-bima.png" alt="" width="36" height="42">
+      <span class="brand-text"><strong>SIBISA</strong><span>Kabupaten Bima</span></span>
+    </a>
+    <nav class="nav" aria-label="Navigasi utama" id="main-nav"><div class="nav-item"><a href="pages/data.html" data-nav-match="/pages/data.html">Dataset</a></div><div class="nav-item"><a href="pages/organisasi.html" data-nav-match="/pages/organisasi.html">Organisasi</a></div><div class="nav-item"><a href="pages/visualisasi.html" data-nav-match="/pages/visualisasi.html">Visualisasi</a></div><div class="nav-item"><a href="pages/infografik.html" data-nav-match="/pages/infografik.html">Infografik</a></div><div class="nav-item"><a href="pages/publikasi.html" data-nav-match="/pages/publikasi.html">Publikasi</a></div>
+    <div class="nav-item">
+      <button data-dropdown-toggle aria-expanded="false" aria-controls="nav-informasi">Informasi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+      <div class="group-panel" id="nav-informasi">
+        <a href="pages/tentang.html" data-nav-match="/pages/tentang.html">Tentang SIBISA <small>Dasar dan tata kelola portal</small></a>
+        <a href="pages/panduan.html" data-nav-match="/pages/panduan.html">Panduan penggunaan <small>Langkah mencari dan memakai data</small></a>
+        <a href="pages/faq.html" data-nav-match="/pages/faq.html">Pertanyaan umum <small>Jawaban atas pertanyaan yang sering diajukan</small></a>
+      </div>
+    </div><div class="nav-item"><a href="pages/login.html" data-nav-match="/pages/login.html">Masuk</a></div></nav>
+    <div class="header-actions">
+      <a class="btn-search" href="pages/data.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Cari data</a>
+      <button class="icon-btn" id="theme-btn" aria-label="Ganti tema terang atau gelap"><svg class="sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Buka menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+  
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="index.html" data-nav-match="/index.html">Beranda</a>
+      <a href="pages/data.html" data-nav-match="/pages/data.html">Dataset</a><a href="pages/organisasi.html" data-nav-match="/pages/organisasi.html">Organisasi</a><a href="pages/visualisasi.html" data-nav-match="/pages/visualisasi.html">Visualisasi</a><a href="pages/infografik.html" data-nav-match="/pages/infografik.html">Infografik</a><a href="pages/publikasi.html" data-nav-match="/pages/publikasi.html">Publikasi</a>
+      <div class="group-title">Informasi</div>
+      <div class="indent">
+        <a href="pages/tentang.html" data-nav-match="/pages/tentang.html">Tentang SIBISA</a>
+        <a href="pages/panduan.html" data-nav-match="/pages/panduan.html">Panduan penggunaan</a>
+        <a href="pages/faq.html" data-nav-match="/pages/faq.html">Pertanyaan umum</a>
+      </div>
+      <a href="pages/login.html" data-nav-match="/pages/login.html">Masuk</a>
+    </div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div>
+      <p class="hero-eyebrow">Sistem Informasi Bima Satu Data</p>
+      <h1>Data pembangunan Kabupaten Bima, dalam <span class="accent">satu pintu</span></h1>
+      <p class="lead">Temukan data statistik sektoral, visualisasi, dan infografik dari perangkat daerah dengan cepat, mudah, dan dapat dipertanggungjawabkan.</p>
+      <form class="search-bar" action="pages/data.html" method="get" role="search" aria-label="Cari dataset">
+        <div class="search-bar-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="home-q" name="q" type="search" aria-label="Cari dataset" placeholder="Cari dataset, mis. penduduk">
+        </div>
+        <button type="submit">Cari</button>
+      </form>
+      <div class="popular">
+        <span>Pencarian populer:</span>
+        <a href="pages/data.html?q=penduduk">Penduduk</a><a href="pages/data.html?q=internet">Internet desa</a><a href="pages/data.html?q=menara">Menara telekomunikasi</a>
+      </div>
+    </div>
+    <div class="featured-card">
+      <div class="backdrop" aria-hidden="true"></div>
+      <a class="card" href="pages/visualisasi/sebaran-layanan-internet-desa.html">
+        <div class="head">Visualisasi unggulan</div>
+        <div class="chart" data-chart="map"></div>
+        <div class="foot">
+          <div><h3>Sebaran Titik Layanan Internet Desa</h3><p>Dinas Komunikasi, Informatika dan Statistik · 2024</p></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </div>
+      </a>
+      <div class="featured-badge" aria-hidden="true"><img src="assets/images/lambang-bima.png" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section" aria-labelledby="stats-heading">
+  <div class="stats-card">
+    <h2 id="stats-heading">Statistik SIBISA</h2>
+    <div class="stats-grid">
+      
+      <a class="stat-tile tile-navy" href="pages/data.html">
+        <div class="row"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></span><span class="value">12</span></div>
+        <span class="label">Dataset <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        <span class="desc">Data statistik sektoral yang dapat dilihat dan diunduh.</span>
+      </a>
+      <a class="stat-tile tile-green" href="pages/visualisasi.html">
+        <div class="row"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span><span class="value">6</span></div>
+        <span class="label">Visualisasi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        <span class="desc">Grafik dan peta yang merangkum tren dari data.</span>
+      </a>
+      <a class="stat-tile tile-indigo" href="pages/infografik.html">
+        <div class="row"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span><span class="value">6</span></div>
+        <span class="label">Infografik <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        <span class="desc">Informasi ringkas dalam bentuk visual yang mudah dibagikan.</span>
+      </a>
+      <a class="stat-tile tile-gold" href="pages/organisasi.html">
+        <div class="row"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/></svg></span><span class="value">12</span></div>
+        <span class="label">Perangkat daerah <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        <span class="desc">Organisasi perangkat daerah yang mempublikasikan datanya.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="topik-heading">
+  <div class="section-header">
+    <div><span class="bar"></span><h2 id="topik-heading">Jelajahi berdasarkan topik</h2><p>Pilih bidang pembangunan untuk melihat data yang tersedia.</p></div>
+  </div>
+  <div class="topic-grid">
+    
+    <a class="topic-item" href="pages/data.html?topic=administrasi-pemerintahan">
+      <span class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22V12h6v10"/></svg></span>
+      <strong>Administrasi Pemerintahan</strong>
+      <span>5 data</span>
+    </a>
+    <a class="topic-item" href="pages/data.html?topic=infrastruktur">
+      <span class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19 8 5M16 5l4 14"/></svg></span>
+      <strong>Infrastruktur</strong>
+      <span>3 data</span>
+    </a>
+    <a class="topic-item" href="pages/data.html?topic=kesehatan">
+      <span class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
+      <strong>Kesehatan</strong>
+      <span>1 data</span>
+    </a>
+    <a class="topic-item" href="pages/data.html?topic=lingkungan-hidup">
+      <span class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/></svg></span>
+      <strong>Lingkungan Hidup</strong>
+      <span>1 data</span>
+    </a>
+    <a class="topic-item" href="pages/data.html?topic=maritim">
+      <span class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 22V8M5 12H2a10 10 0 0 0 20 0h-3"/></svg></span>
+      <strong>Maritim</strong>
+      <span>1 data</span>
+    </a>
+    <a class="topic-item" href="pages/data.html?topic=pariwisata">
+      <span class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22h18M6 18V11M10 18V11M14 18V11M18 18V11M2 8l10-5 10 5"/></svg></span>
+      <strong>Pariwisata</strong>
+      <span>2 data</span>
+    </a>
+    <a class="topic-item" href="pages/data.html?topic=pendidikan-teknologi">
+      <span class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg></span>
+      <strong>Pendidikan dan Teknologi</strong>
+      <span>6 data</span>
+    </a>
+    <a class="topic-item" href="pages/data.html?topic=peternakan-pertanian">
+      <span class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22 16 8"/></svg></span>
+      <strong>Peternakan dan Pertanian</strong>
+      <span>3 data</span>
+    </a>
+    <a class="topic-item" href="pages/data.html?topic=sosial">
+      <span class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>
+      <strong>Sosial</strong>
+      <span>2 data</span>
+    </a>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="why-inner">
+    <h2>Mengapa menggunakan SIBISA?</h2>
+    <div class="why-grid">
+      
+      <div class="why-item">
+        <div class="head"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span><span class="num">01</span></div>
+        <h3>Temukan data dengan mudah</h3>
+        <p>Cari berdasarkan kata kunci, topik, atau perangkat daerah dan sampai ke data yang dibutuhkan dalam beberapa klik.</p>
+      </div>
+      <div class="why-item">
+        <div class="head"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></span><span class="num">02</span></div>
+        <h3>Unduh dalam format terbuka</h3>
+        <p>Dataset tersedia dalam format seperti CSV dan XLSX sehingga langsung dapat diolah lebih lanjut.</p>
+      </div>
+      <div class="why-item">
+        <div class="head"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span class="num">03</span></div>
+        <h3>Bersumber dari data resmi</h3>
+        <p>Setiap dataset mencantumkan produsen data, tanggal pembaruan, dan lisensi penggunaan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tabs-card" aria-label="Konten terbaru" style="padding-top:2rem;padding-bottom:4rem">
+  <div class="tabs" data-tabs>
+    <div>
+      <h3>Konten terbaru</h3>
+      <p class="lead">Telusuri dataset, visualisasi, infografik, dan publikasi terbaru dari perangkat daerah.</p>
+      <div class="tablist" role="tablist" aria-label="Jenis konten">
+        <button class="tab-btn active" id="tab-dataset" role="tab" aria-selected="true" aria-controls="panel-dataset" data-tab="dataset">Dataset <span class="count">12</span></button>
+        <button class="tab-btn" id="tab-visualisasi" role="tab" aria-selected="false" aria-controls="panel-visualisasi" data-tab="visualisasi">Visualisasi <span class="count">6</span></button>
+        <button class="tab-btn" id="tab-infografik" role="tab" aria-selected="false" aria-controls="panel-infografik" data-tab="infografik">Infografik <span class="count">6</span></button>
+        <button class="tab-btn" id="tab-publikasi" role="tab" aria-selected="false" aria-controls="panel-publikasi" data-tab="publikasi">Publikasi <span class="count">4</span></button>
+      </div>
+    </div>
+    <div class="tab-panel" id="panel-dataset" role="tabpanel" aria-labelledby="tab-dataset" data-panel="dataset">
+      <ul style="display:flex;flex-direction:column;gap:0.75rem">
+        
+        <li>
+          <article class="dataset-row flat">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19 8 5M16 5l4 14"/></svg></div>
+            <div class="body">
+              <div class="meta-top"><span class="topic">Infrastruktur</span><span class="tag success">Terbuka</span></div>
+              <h3><a href="pages/data/menara-telekomunikasi-per-kecamatan.html">Jumlah Menara Telekomunikasi per Kecamatan</a></h3>
+              <p class="desc">Sebaran menara telekomunikasi dan penyedia layanan seluler menurut kecamatan di Kabupaten Bima.</p>
+              <dl class="dl">
+                <div><dt>Produsen</dt><dd>Dinas Komunikasi, Informatika dan Statistik</dd></div>
+                <div style="display:flex;align-items:center;gap:0.375rem"><dt>Diperbarui</dt><dd>18 September 2024</dd></div>
+                <div class="formats"><dd>CSV</dd><dd>XLSX</dd></div>
+              </dl>
+            </div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </article>
+        </li>
+        <li>
+          <article class="dataset-row flat">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg></div>
+            <div class="body">
+              <div class="meta-top"><span class="topic">Pendidikan dan Teknologi</span><span class="tag success">Terbuka</span></div>
+              <h3><a href="pages/data/cakupan-layanan-internet-desa.html">Cakupan Layanan Internet Desa</a></h3>
+              <p class="desc">Status ketersediaan dan kualitas layanan internet publik pada desa dan kelurahan.</p>
+              <dl class="dl">
+                <div><dt>Produsen</dt><dd>Dinas Komunikasi, Informatika dan Statistik</dd></div>
+                <div style="display:flex;align-items:center;gap:0.375rem"><dt>Diperbarui</dt><dd>12 September 2024</dd></div>
+                <div class="formats"><dd>CSV</dd></div>
+              </dl>
+            </div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </article>
+        </li>
+        <li>
+          <article class="dataset-row flat">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22V12h6v10"/></svg></div>
+            <div class="body">
+              <div class="meta-top"><span class="topic">Administrasi Pemerintahan</span><span class="tag success">Terbuka</span></div>
+              <h3><a href="pages/data/jumlah-penduduk-per-kecamatan.html">Jumlah Penduduk per Kecamatan</a></h3>
+              <p class="desc">Data jumlah penduduk menurut kecamatan dan jenis kelamin berdasarkan sumber resmi kependudukan.</p>
+              <dl class="dl">
+                <div><dt>Produsen</dt><dd>Dinas Kependudukan dan Pencatatan Sipil</dd></div>
+                <div style="display:flex;align-items:center;gap:0.375rem"><dt>Diperbarui</dt><dd>5 September 2024</dd></div>
+                <div class="formats"><dd>CSV</dd><dd>XLSX</dd></div>
+              </dl>
+            </div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </article>
+        </li>
+        <li>
+          <article class="dataset-row flat">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg></div>
+            <div class="body">
+              <div class="meta-top"><span class="topic">Pendidikan dan Teknologi</span><span class="tag success">Terbuka</span></div>
+              <h3><a href="pages/data/indeks-literasi-digital.html">Indeks Literasi Digital Masyarakat</a></h3>
+              <p class="desc">Hasil pengukuran tingkat literasi digital masyarakat menurut dimensi dan wilayah.</p>
+              <dl class="dl">
+                <div><dt>Produsen</dt><dd>Dinas Komunikasi, Informatika dan Statistik</dd></div>
+                <div style="display:flex;align-items:center;gap:0.375rem"><dt>Diperbarui</dt><dd>30 Agustus 2024</dd></div>
+                <div class="formats"><dd>XLSX</dd></div>
+              </dl>
+            </div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </article>
+        </li>
+      </ul>
+      <a class="tab-cta" href="pages/data.html">Lihat semua dataset <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="tab-panel" id="panel-visualisasi" role="tabpanel" aria-labelledby="tab-visualisasi" data-panel="visualisasi" hidden>
+      <ul class="media-grid media-grid--compact">
+        
+        <li>
+          <article class="media-card">
+            <div class="chart" data-chart="map"></div>
+            <div class="body">
+              <p class="meta">Pendidikan dan Teknologi <span>· 2024</span></p>
+              <h3><a href="pages/visualisasi/sebaran-layanan-internet-desa.html">Sebaran Titik Layanan Internet Desa</a></h3>
+              <p class="desc">Peta sebaran titik akses internet publik yang dikelola pemerintah desa dan perangkat daerah.</p>
+              <p class="org">Dinas Komunikasi, Informatika dan Statistik</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="media-card">
+            <div class="chart" data-chart="bar"></div>
+            <div class="body">
+              <p class="meta">Infrastruktur <span>· 2024</span></p>
+              <h3><a href="pages/visualisasi/cakupan-sinyal-seluler.html">Cakupan Sinyal Seluler per Kecamatan</a></h3>
+              <p class="desc">Gambaran cakupan layanan seluler pada wilayah kecamatan di Kabupaten Bima.</p>
+              <p class="org">Dinas Komunikasi, Informatika dan Statistik</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="media-card">
+            <div class="chart" data-chart="radar"></div>
+            <div class="body">
+              <p class="meta">Pendidikan dan Teknologi <span>· 2024</span></p>
+              <h3><a href="pages/visualisasi/indeks-literasi-digital-bima.html">Indeks Literasi Digital Kabupaten Bima</a></h3>
+              <p class="desc">Ringkasan capaian literasi digital masyarakat menurut dimensi pengukuran.</p>
+              <p class="org">Dinas Komunikasi, Informatika dan Statistik</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <a class="tab-cta" href="pages/visualisasi.html">Lihat semua visualisasi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="tab-panel" id="panel-infografik" role="tabpanel" aria-labelledby="tab-infografik" data-panel="infografik" hidden>
+      <ul class="media-grid media-grid--compact">
+        
+        <li>
+          <article class="media-card">
+            <div class="chart" data-chart="poster"></div>
+            <div class="body">
+              <p class="meta">Pendidikan dan Teknologi <span>· 2024</span></p>
+              <h3><a href="pages/infografik/menuju-desa-digital.html">Menuju Desa Digital di Kabupaten Bima</a></h3>
+              <p class="desc">Ringkasan langkah penguatan infrastruktur dan literasi digital di tingkat desa.</p>
+              <p class="org">Dinas Komunikasi, Informatika dan Statistik</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="media-card">
+            <div class="chart" data-chart="poster"></div>
+            <div class="body">
+              <p class="meta">Administrasi Pemerintahan <span>· 2024</span></p>
+              <h3><a href="pages/infografik/layanan-publik-berbasis-tik.html">Layanan Publik Berbasis TIK</a></h3>
+              <p class="desc">Infografik pemanfaatan teknologi informasi dalam pelayanan publik daerah.</p>
+              <p class="org">Dinas Komunikasi, Informatika dan Statistik</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="media-card">
+            <div class="chart" data-chart="poster"></div>
+            <div class="body">
+              <p class="meta">Administrasi Pemerintahan <span>· 2024</span></p>
+              <h3><a href="pages/infografik/data-untuk-perencanaan.html">Peran Data dalam Perencanaan Pembangunan</a></h3>
+              <p class="desc">Alur pemanfaatan data statistik sektoral dalam perencanaan pembangunan daerah.</p>
+              <p class="org">Badan Perencanaan Pembangunan Daerah</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <a class="tab-cta" href="pages/infografik.html">Lihat semua infografik <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="tab-panel" id="panel-publikasi" role="tabpanel" aria-labelledby="tab-publikasi" data-panel="publikasi" hidden>
+      <ul style="display:flex;flex-direction:column;gap:0.75rem">
+        
+        <li>
+          <article class="dataset-row flat">
+            <div class="body">
+              <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-foreground)">31 Agustus 2026</p>
+              <h3><a href="https://bimakab.go.id/news/1319-cegah-gratifikasi-inspektorat-kabupaten-bima-hadirkan-inovasi-siaga" target="_blank" rel="noopener noreferrer">Cegah Gratifikasi, Inspektorat Kabupaten Bima Hadirkan Inovasi SIAGA</a></h3>
+              <p class="desc">Inovasi Sistem Informasi dan Akses Pengendalian Gratifikasi (SIAGA GRATIFIKASI) diperkenalkan dalam acara bincang santai SIAGA Menyapa.</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="dataset-row flat">
+            <div class="body">
+              <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-foreground)">26 Mei 2026</p>
+              <h3><a href="https://bimakab.go.id/news/1318-raih-predikat-wtp-11-kali-berturut-turut-bupati-ady-mahyudi-apresiasi-kinerja-asn" target="_blank" rel="noopener noreferrer">Raih Predikat WTP 11 Kali Berturut-turut, Bupati Apresiasi Kinerja ASN</a></h3>
+              <p class="desc">Pemerintah Kabupaten Bima kembali mempertahankan predikat opini Wajar Tanpa Pengecualian atas Laporan Keuangan Pemerintah Daerah.</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="dataset-row flat">
+            <div class="body">
+              <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-foreground)">9 Mei 2026</p>
+              <h3><a href="https://bimakab.go.id/news/1317-gandeng-inovasi-ntb-dan-lptk-pemkab-bima-akselerasi-mutu-pendidikan-dan-transformasi-ekosistem-pendidikan" target="_blank" rel="noopener noreferrer">Gandeng INOVASI NTB, Pemkab Bima Akselerasi Mutu Pendidikan</a></h3>
+              <p class="desc">Pemkab Bima memperkuat desain program peningkatan capaian literasi dan numerasi melalui kolaborasi lintas lembaga.</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <a class="tab-cta" href="pages/publikasi.html">Lihat semua publikasi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+</main><script>
+(function(){
+  var tabs = document.querySelectorAll('[data-tab]');
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-tab');
+      document.querySelectorAll('[data-tab]').forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+      document.querySelectorAll('[data-panel]').forEach(function(p){ p.hidden = p.getAttribute('data-panel') !== id; });
+    });
+  });
+})();
+</script><footer class="site-footer">
+  <div class="bar"></div>
+  <div class="container site-footer-inner">
+    <div>
+      <div class="brand"><img src="assets/images/lambang-bima.png" alt=""><div><strong>SIBISA</strong><span>Kabupaten Bima</span></div></div>
+      <p>Sistem Informasi Bima Satu Data: portal data resmi untuk menyediakan data sektoral Kabupaten Bima yang akurat, terbuka, dan dapat dipertanggungjawabkan.</p>
+    </div>
+    <nav aria-label="Data"><h2>Data</h2><ul>
+      <li><a href="pages/data.html">Dataset</a></li>
+      <li><a href="pages/visualisasi.html">Visualisasi</a></li>
+      <li><a href="pages/infografik.html">Infografik</a></li>
+      <li><a href="pages/publikasi.html">Publikasi</a></li>
+    </ul></nav>
+    <nav aria-label="Informasi"><h2>Informasi</h2><ul>
+      <li><a href="pages/tentang.html">Tentang SIBISA</a></li>
+      <li><a href="pages/panduan.html">Panduan penggunaan</a></li>
+      <li><a href="pages/faq.html">Pertanyaan umum</a></li>
+      <li><a href="pages/organisasi.html">Organisasi</a></li>
+    </ul></nav>
+    <div><h2>Kontak</h2><address>
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> <span>Jl. Soekarno Hatta No. 1, Komplek Kantor Bupati Bima, Godo-Woha, Kabupaten Bima</span></p>
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> <span><a href="https://sibisa.bimakab.go.id" target="_blank" rel="noopener noreferrer">sibisa.bimakab.go.id</a><br><a href="https://bimakab.go.id" target="_blank" rel="noopener noreferrer">bimakab.go.id</a></span></p>
+    </address></div>
+  </div>
+  <div class="bottom"><div class="container bottom-inner">
+    <p>© 2026 Pemerintah Kabupaten Bima. Hak cipta dilindungi.</p>
+    <p>Diselenggarakan oleh Diskominfostik Kabupaten Bima</p>
+  </div></div>
+</footer>
+<button class="scroll-top hidden" id="scroll-top" aria-label="Kembali ke atas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
+<script src="js/data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/main.js"></script>
+<script>document.querySelectorAll('[data-chart]').forEach(function(el){el.innerHTML=window.chartSVG(el.dataset.chart);});</script>
+</body></html>
